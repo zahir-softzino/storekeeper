@@ -9,7 +9,8 @@
                 </div>                
             </div>
             <div class="card-body mt-10">
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="{{route('product.store')}}" method="post" enctype="multipart/form-data">
+                    @csrf
                     <div class="">
                         <label for="" class="" style="margin-top: 20px;">Product Name <span style="color: red;">*</span></label>
                         <input class="form-control" type="text" name="name" placeholder="Product Name" required> 
